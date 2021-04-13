@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="knuth.view.controller.RecipeCreateViewController">
+   <children>
+    <AnchorPane id="black-menu" minHeight="1080.0" minWidth="0.0" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <AnchorPane layoutX="137.0" layoutY="107.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="580.0">
+            <TextField fx:id="nameInput" layoutX="137.0" layoutY="138.0" prefHeight="37.0" prefWidth="580.0" promptText="Name" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0" />
+               <Text fill="WHITE" layoutX="137.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-3.0">
+                  <font>
+                     <Font size="24.0" />
+                  </font></Text>
+         </AnchorPane>
+            <AnchorPane layoutX="137.0" layoutY="200.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="580.0">
+               <children>
+                  <ChoiceBox fx:id="categoryInput" prefHeight="37.0" prefWidth="580.0" AnchorPane.topAnchor="30.0">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Fleisch" />
+                            <String fx:value="Suppe" />
+                            <String fx:value="Vegetarisch" />
+                            <String fx:value="Vegan" />
+                        </FXCollections>
+                    </items>
+                  </ChoiceBox>
+                  <Text fill="WHITE" layoutX="137.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kategorie" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-3.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="137.0" layoutY="284.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="580.0">
+               <children>
+                  <TextField fx:id="dauerInput" prefHeight="37.0" prefWidth="580.0" promptText="Dauer" AnchorPane.topAnchor="30.0" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Dauer (in Minuten)" AnchorPane.topAnchor="-3.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="137.0" layoutY="373.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="580.0">
+               <children>
+                  <TextField fx:id="portionenInput" prefHeight="37.0" prefWidth="580.0" promptText="Portionen" AnchorPane.topAnchor="30.0" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Portionen" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="-3.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ingredientsInputPane" layoutX="137.0" layoutY="463.0" prefHeight="583.0" prefWidth="580.0" style="-fx-background-color: #5f5f5f; -fx-background-radius: 1%;" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="1203.0" AnchorPane.topAnchor="463.0">
+               <children>
+                  <Button fx:id="addIngredientButton" layoutX="237.0" layoutY="49.0" mnemonicParsing="false" onAction="#addIngredientLine" text="Zutat hinzufügen" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="addImageButton" layoutX="1613.0" layoutY="877.0" mnemonicParsing="false" onAction="#openFileChooser" text="Bild hinzufügen" />
+            <Button fx:id="createRecipeButton" layoutX="1628.0" layoutY="943.0" mnemonicParsing="false" onAction="#createRecipe" text="Speichern" />
+            <AnchorPane layoutX="827.0" layoutY="107.0" prefHeight="942.0" prefWidth="592.0">
+               <children>
+                  <Text fill="WHITE" layoutX="15.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anweisungen">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="directionsInput" layoutX="14.0" layoutY="24.0" prefHeight="916.0" prefWidth="565.0" alignment="TOP_LEFT"/>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button id="black-menu-buttons" fx:id="backButton" mnemonicParsing="false" onAction="#MainView" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="50.0">
+               <image>
+                  <Image url="@BackArrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

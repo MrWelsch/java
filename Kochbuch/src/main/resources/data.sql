@@ -1,0 +1,11 @@
+INSERT INTO INGREDIENT (id, name, category, calories, protein, carbohydrates, fat) VALUES (0000, 'Zwiebel', 'Gemuese', 62, 1, 9.1, 0.2);
+INSERT INTO INGREDIENT (id, name, category, calories, protein, carbohydrates, fat) VALUES (1000, 'Tomate', 'Gemuese', 18, 1, 2.6, 0.2);
+INSERT INTO INGREDIENT (id, name, category, calories, protein, carbohydrates, fat) VALUES (2000, 'Kiwi', 'Obst', 62, 1, 9.1, 0.2);
+INSERT INTO INGREDIENT (id, name, category, calories, protein, carbohydrates, fat) VALUES (3000, 'Gurke', 'Gemuese', 45, 6, 9.1, 0.2);
+INSERT INTO INGREDIENT (id, name, category, calories, protein, carbohydrates, fat) VALUES (4000, 'Mehl', 'Getreide', 500, 1, 450, 0.2);
+INSERT INTO INGREDIENT (id, name, category, calories, protein, carbohydrates, fat) VALUES (5000, 'Rindfleisch', 'Fleisch', 345, 200, 9.1, 0.2);
+INSERT INTO INGREDIENT (id, name, category, calories, protein, carbohydrates, fat) VALUES (6000, 'Kische', 'Obst', 62, 1, 9.1, 0.2);
+INSERT INTO INGREDIENT (id, name, category, calories, protein, carbohydrates, fat) VALUES (7000, 'Zucker', 'Rohstoffe', 62, 1, 9.1, 0.2);
+INSERT INTO INGREDIENT (id, name, category, calories, protein, carbohydrates, fat) VALUES (8000, 'Butter', 'Fette', 62, 1, 9.1, 0.2);
+INSERT INTO INGREDIENT (id, name, category, calories, protein, carbohydrates, fat) VALUES (9000, 'Blumenkohl', 'Gemuese', 62, 1, 9.1, 0.2);
+//INSERT INTO RECIPE (id, name, category, healthRating, time, personCount, ingredients, amounts, directions, imagepath, favorized) VALUES (0000, 'Kuchen', 'Nachtisch', 3, 180, 4, KuchenList, AmountList, 'gajkjfklsjdkljlskdjfklsjdfkljsdfl', 'Path', true);

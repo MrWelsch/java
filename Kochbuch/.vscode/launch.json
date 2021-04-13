@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch ApplicationKnuth",
+            "request": "launch",
+            "mainClass": "knuth.ApplicationKnuth",
+            "projectName": "Kochbuch"
+        },
+        {
+            "type": "java",
+            "name": "Launch ApplicationKnuth",
+            "request": "launch",
+            "mainClass": "knuth.main.ApplicationKnuth",
+            "projectName": "Kochbuch"
+        },
+        {
+            "type": "java",
+            "name": "Launch SpringBootApplicationKnuth",
+            "request": "launch",
+            "mainClass": "knuth.main.SpringBootApplicationKnuth",
+            "projectName": "Kochbuch"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DatabaseApplication<Kochbuch>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "knuth.DatabaseApplication",
+            "projectName": "Kochbuch",
+            "args": ""
+        }
+    ]
+}

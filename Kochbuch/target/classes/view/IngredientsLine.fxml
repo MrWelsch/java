@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.FXCollections ?>
+<?import java.lang.String ?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="372.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="knuth.view.controller.RecipeCreateViewController">
+   <children>
+      <TextField fx:id="recipeMenge" id="menge" layoutX="21.0" layoutY="14.0" prefHeight="45.0" prefWidth="64.0" promptText="Menge" />
+      <TextField fx:id="recipeZutat" id="zutat" layoutX="186.0" layoutY="14.0" prefHeight="45.0" prefWidth="178.0" promptText="Zutat" />
+      <ChoiceBox fx:id="recipeEinheit" id="einheit" layoutX="97.0" layoutY="14.0" prefHeight="45.0" prefWidth="64.0" >
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="g" />
+                <String fx:value="kg" />
+                <String fx:value="ml" />
+                <String fx:value="l" />
+                <String fx:value="Prise" />
+                <String fx:value="Tasse" />
+            </FXCollections>
+        </items>
+      </ChoiceBox>
+   </children>
+</AnchorPane>

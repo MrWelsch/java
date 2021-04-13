@@ -1,0 +1,9 @@
+/Users/nico/Projects/kochbuch/src/main/java/knuth/factories/DaoFactory.java
+/Users/nico/Projects/kochbuch/src/main/java/knuth/controller/IngredientController.java
+/Users/nico/Projects/kochbuch/src/main/java/knuth/DatabaseApplication.java
+/Users/nico/Projects/kochbuch/src/main/java/knuth/model/interfaces/Ingredient.java
+/Users/nico/Projects/kochbuch/src/main/java/knuth/facades/DaoFacade.java
+/Users/nico/Projects/kochbuch/src/main/java/knuth/dao/IngredientJpa.java
+/Users/nico/Projects/kochbuch/src/main/java/knuth/factories/ModelFactory.java
+/Users/nico/Projects/kochbuch/src/main/java/knuth/dao/IngredientDao.java
+/Users/nico/Projects/kochbuch/src/main/java/knuth/model/entities/IngredientEntity.java
